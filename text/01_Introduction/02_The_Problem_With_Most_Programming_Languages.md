@@ -1,0 +1,9 @@
+### The problem with most programming languages
+
+At some point in history, the improvement in CPUs raw performance has started to decrease. They weren't getting as faster as before. The solution found was to add more cores, so each core can execute code independently. This way the CPU performs better by combining the processing power of all the cores. It worked, and this is how CPUs are designed today. You're probably reading this on a device with multiple cores.
+
+With such a big change in hardware architecture, it was reasonable to expect that programming would change accordingly. After all, we write software to command the hardware to solve our problems in the best possible way. So the possibility to write code which executes concurrently on different cores was something a lot of developers were expecting.
+
+However, most programming languages aren't well suited to take advantage of the extra cores. Even though some of them offer threads or something alike, their support to concurrent programming is either bad or hard to achieve. Languages like PHP, JavaScript, and Ruby were not designed with concurrency in mind. They were created before the multi-core revolution, and as general-purpose languages, they didn't have a compelling reason to base their design on concurrency.
+
+Unfortunately, concurrent programming is not an easy feature for a language to offer. You can't add it to an existing programming language and just hope for the best. It has very unique requirements, and these requirements usually go in the opposite direction of the design of most languages. It has to be there from the beginning. That's why a lot of popular programming languages can't simply add a good model for concurrent programming. While we're living in a concurrent world, they're stuck in the past.
