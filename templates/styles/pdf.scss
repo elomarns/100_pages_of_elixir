@@ -1,6 +1,6 @@
 @import './files/normalize';
 
-$frontcover-color: #5091b1;
+$frontcover-color: #983b89;
 $page-height: 22.86cm;
 $page-height: 19.05cm;
 
@@ -59,10 +59,12 @@ body {
   font-family: Caslon, serif;
   font-size: 14px;
   line-height: 1.5;
+  counter-reset: section;
 }
 
 a {
   color: $frontcover-color;
+  text-decoration: none;
 }
 
 .go-top {
@@ -134,9 +136,9 @@ a {
 
 .chapter > h2 {
   font-family: sans-serif;
-  margin: -100px -100px 75px -100px;
+  margin: -100px -100px 50px -100px;
   background: $frontcover-color;
-  padding: 100px;
+  padding: 35px 100px;
   color: rgba(#fff, .6);
   font-size: 40px;
 }
@@ -154,14 +156,24 @@ a {
 }
 
 // Code highlighting
+code {
+  white-space: pre-wrap;
+}
+
 p code,
 li code {
-  font-size: 12px;
+  background: #f8f8f8;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  color: #666;
   font-family: Menlo, monospace;
+  font-size: 12px;
+  padding: .1em .2em;
+  vertical-align: baseline;
 }
 
 .highlight {
-  padding: 15px;
+  padding: 5px 15px;
   font-size: 12px;
 }
 
@@ -172,6 +184,10 @@ li code {
 .highlight .gutter {
   color: #aaa;
   padding-right: 15px;
+}
+
+div.highlight {
+  border: 1px solid #ccc;
 }
 
 // Format lexers list
@@ -205,7 +221,7 @@ li code {
   font-family: sans-serif;
   margin: -100px -100px 75px -100px;
   background: $frontcover-color;
-  padding: 100px;
+  padding: 35px 100px;
   color: rgba(#fff, .6);
   font-size: 40px;
 }
@@ -228,14 +244,12 @@ li code {
   text-transform: uppercase;
   font-weight: bold;
   color: #000;
-  font-size: 20px;
+  font-size: 14px;
   position: relative;
-  padding-left: 25px;
 
   &:before {
-    content: target-counter(attr(href), page) " ";
-    position: absolute;
-    left: 0;
+    counter-increment: section;
+    content: "Chapter " counter(section) ": ";
     transform: translatex(-100%);
   }
 }
