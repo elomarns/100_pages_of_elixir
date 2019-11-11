@@ -51,13 +51,6 @@ $frontcover-padding: 50px;
   }
 }
 
-@page white {
-  margin: 0;
-  background: #fff;
-  display: block;
-  height: 100%;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -74,24 +67,6 @@ a {
 
 .go-top {
   display: none;
-}
-
-// White page
-.white-page {
-  page: white;
-  page-break-before: always;
-  page-break-after: always;
-}
-
-.white-page:before {
-  content: 'This page intentionally left blank';
-  text-transform: uppercase;
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-  top: 50%;
-  transform: translatey(-50%);
 }
 
 // Style frontcover
