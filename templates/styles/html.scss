@@ -1,6 +1,6 @@
 @import './files/normalize';
 
-$cover-color: #5091b1;
+$cover-color: #983b89;
 $link-color: $cover-color;
 
 html {
@@ -18,11 +18,19 @@ body {
 
 a {
   color: $link-color;
+  text-decoration: none;
 }
 
 p code,
 li code {
-  color: #3F9C55;
+  background: #f8f8f8;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  color: #666;
+  font-family: Menlo, monospace;
+  font-size: 12px;
+  padding: .1em .2em;
+  vertical-align: baseline;
 }
 
 // Format cover page.
@@ -64,13 +72,21 @@ li code {
 }
 
 // Code highlighting
+code {
+  white-space: pre-wrap;
+}
+
 .highlight {
-  padding: 15px;
+  padding: 5px 15px;
 }
 
 .highlight .gutter {
   color: #ccc;
   padding-right: 15px;
+}
+
+div.highlight {
+  border: 1px solid #ccc;
 }
 
 // Table of contents
