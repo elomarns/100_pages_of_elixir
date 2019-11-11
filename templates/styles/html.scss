@@ -165,27 +165,6 @@ div.highlight {
   color: #fff;
 }
 
-// Format lexers list
-.lexers-list {
-  margin: 0;
-  padding: 0;
-  -webkit-columns: 2;
-  columns: 2;
-}
-
-.lexers-list li {
-  -webkit-column-break-inside: avoid;
-  break-inside: avoid-column;
-}
-
-.lexers-list span {
-  font-size: 13px;
-}
-
-.lexers-list li + li {
-  margin-top: 15px;
-}
-
 // Format imprint
 .imprint {
   margin-top: 50px;
