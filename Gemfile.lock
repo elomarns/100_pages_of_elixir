@@ -1,15 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.1)
+    activesupport (7.0.3.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-      zeitwerk (~> 2.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
     builder (3.2.3)
     coderay (1.1.2)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.10)
     eeepub-with-cover-support (0.8.8)
       builder
       rubyzip
@@ -28,7 +27,7 @@ GEM
     guard-shell (0.7.1)
       guard (>= 2.0.0)
       guard-compat (~> 1.0)
-    i18n (1.7.0)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     kitabu (2.1.0)
       activesupport
@@ -49,7 +48,7 @@ GEM
     lumberjack (1.0.13)
     method_source (0.9.2)
     mini_portile2 (2.4.0)
-    minitest (5.13.0)
+    minitest (5.16.2)
     nenv (0.3.0)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
@@ -75,10 +74,8 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     shellany (0.0.1)
     thor (0.20.3)
-    thread_safe (0.3.6)
-    tzinfo (1.2.5)
-      thread_safe (~> 0.1)
-    zeitwerk (2.2.1)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
     zip-zip (0.3)
       rubyzip (>= 1.0.0)
 
